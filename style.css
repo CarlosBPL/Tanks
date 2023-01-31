@@ -1,0 +1,156 @@
+@keyframes sides {
+    from {
+        opacity: .0;
+        bottom: 200px
+    }
+    to {
+        opacity: 1;
+        bottom: 0;
+    }
+}
+* {
+    margin:0;
+    padding: 0;
+}
+body{
+    background-image:  linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(images/tlo.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+  
+}
+header {
+    background-color: black;
+    display: flex;
+    justify-content: space-between;
+    height: 60px;
+    opacity: .7;
+}
+#logo {
+    width: 100px;
+    transition-duration: 1s;
+    display: flex;
+    justify-content: center;
+    align-items: center;  
+}
+#logo img {
+    width: 50%;
+    border-radius: 8px;
+}
+nav{
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 50%;
+   
+}
+ul {
+    width: 100%;
+    display: flex;
+    justify-content: end;
+}
+li {
+    transition: 1s;
+    margin-right: 10vh;
+ }
+li>a{
+    display: inline-flex;
+    justify-items: center;
+    text-decoration: none;
+    color: whitesmoke;
+    font-size: 1rem;
+    transition-duration: .5s;
+}
+li>a:hover  {
+    color: red;
+}
+h1 {
+    font-size: 2rem;
+    color: aliceblue;
+    text-align: center;
+    font-style:italic;
+    text-shadow: 2px 2px 1px rgb(0, 0, 0);
+    margin-top: 5%;
+
+}
+#sub-title {
+    font-style: normal;
+    font-size: 1rem;
+    text-align: center;
+    color: whitesmoke;
+}
+main {
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: justify;
+}
+#side {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    height: 350px;
+    margin-top: 2%;
+    
+}
+figure {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    height: 80%;
+    width: 30%;
+    border-radius: 8px;
+    border: 3px solid black;
+    transition-duration: 1s;
+}
+figure:hover {
+    transform: scale(1.1);
+    box-shadow: 0.1rem 0.1rem 10px  black, -0.1rem -0.1rem 10px black;
+}
+figure a {
+    width: 100%;
+    height: 100%;
+    text-decoration: none;
+    transition-duration: 1s;
+    
+}
+#allies {
+    background-image: url(images/alianci.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    animation-name: sides;
+    animation-duration: 2.5s;
+}
+#axis {
+    background-image: url(images/oś.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    animation-name: sides;
+    animation-duration: 3s;
+}
+#soviets {
+    background-image: url(images/sowieci.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    animation-name: sides;
+    animation-duration: 3.5s;
+}
+
+figcaption {
+    text-align: center;
+    width: 100%;
+    background-color: black;
+    color: whitesmoke;
+    opacity: .7;
+}
+section p {
+    font-size: 1.1rem;
+    margin: 5% 5%;
+    color: whitesmoke;
+    text-align: center;
+}
