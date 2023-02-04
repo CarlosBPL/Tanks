@@ -11,6 +11,7 @@
 * {
     margin:0;
     padding: 0;
+    color: whitesmoke;
 }
 body{
     background-image:  linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(images/tlo.jpg);
@@ -21,10 +22,10 @@ body{
 header {
     background-color: black;
     display: flex;
-    justify-content: space-between;
     height: 60px;
     opacity: .7;
 }
+
 #logo {
     width: 100px;
     transition-duration: 1s;
@@ -36,14 +37,24 @@ header {
     width: 50%;
     border-radius: 8px;
 }
+.btn {
+    background-color: black;
+    color: whitesmoke;
+    border: solid black;
+    opacity: .7;
+    cursor: pointer;
+}
 nav{
+    position: relative;
     display:flex;
     align-items: center;
-    justify-content: space-between;
-    width: 50%;
-   
+    width: 30%;
+   margin-left: auto;
 }
 ul {
+    list-style-type: none;
+}
+.nav-links {
     width: 100%;
     display: flex;
     justify-content: end;
@@ -55,12 +66,11 @@ li {
 li>a{
     display: inline-flex;
     justify-items: center;
-    text-decoration: none;
-    color: whitesmoke;
+    text-decoration: none;   
     font-size: 1rem;
     transition-duration: .5s;
 }
-li>a:hover  {
+li>a:hover, li span:hover {
     color: red;
 }
 h1 {
@@ -69,7 +79,7 @@ h1 {
     text-align: center;
     font-style:italic;
     text-shadow: 2px 2px 1px rgb(0, 0, 0);
-    margin-top: 5%;
+    margin-top: 2%;
 
 }
 #sub-title {
@@ -142,15 +152,18 @@ figure a {
 }
 
 figcaption {
-    text-align: center;
+    height: 10%;
     width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     background-color: black;
     color: whitesmoke;
     opacity: .7;
 }
 section p {
     font-size: 1.1rem;
-    margin: 5% 5%;
+    margin: 3% 3%;
     color: whitesmoke;
     text-align: center;
 }
