@@ -112,9 +112,13 @@ figure {
     border: 3px solid black;
     transition-duration: 1s;
 }
-figure:hover {
+figure:hover{
     transform: scale(1.1);
     box-shadow: 0.1rem 0.1rem 10px  black, -0.1rem -0.1rem 10px black;
+}
+#side:hover > :not(:hover){
+    opacity: .4;
+    transform: scale(0.9);
 }
 figure a {
     width: 100%;
