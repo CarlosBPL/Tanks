@@ -16,10 +16,10 @@
 html{
     margin: 0;
     padding: 0;
-    background-image:  linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(images/8bit.png);
+    background-image:  linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(images/tlo.jpg);
     background-position: center;
     background-size: cover;
-
+    background-repeat: no-repeat;
 }
 body {
     background: none;
@@ -101,9 +101,8 @@ main {
 }
 #side {
     display: flex;
-    flex-wrap: wrap;
     justify-content: space-evenly;
-    height: 350px;
+    height: 400px;
     margin-top: 2%;
     
 }
@@ -122,8 +121,22 @@ figure:hover{
     box-shadow: 0.1rem 0.1rem 10px  black, -0.1rem -0.1rem 10px black;
 }
 #side:hover > :not(:hover){
-    opacity: .4;
+    opacity: .6;
     transform: scale(0.9);
+}
+@media (max-width: 800px){
+#side {
+    align-items: center;
+    flex-direction: column;
+    height: 1000px;
+}
+figure {
+    width: 80%;
+    height: 300px;
+}
+nav {
+    width: 80%;
+}
 }
 figure a {
     width: 100%;
