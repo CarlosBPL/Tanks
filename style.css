@@ -64,10 +64,10 @@ ol {
     position: absolute;
     display: none;
     height: 90px;
-    width: 33px;
+    width: 40px;
     background-color: black;
     opacity: .7;
- ;
+
 }
 ol > li {
     margin-top: 20px;
