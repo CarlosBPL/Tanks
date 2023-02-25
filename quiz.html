@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="quiz.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
     <title>Quiz</title>
 </head>
 <body>
@@ -28,9 +29,18 @@
         <main> 
             <h2 id="select">please select quiz:</h2>
             <div id="dif">
-                <p id="es">easy</p>
-                <p id="med">medium</p>
-                <p id="hr">hard</p>
+                <p id="es" class="diff">easy</p>
+                <p id="med" class="diff">medium</p>
+                <p id="hr"  class="diff">hard</p>
+                <p id="q1"class="hdn">question 1: 
+                    <ul id="qlist"class="hdn">
+                        
+                        <li><button class="ans" value="false">1</button></li>
+                        <li><button class="ans" value="true">2</button></li>
+                        <li><button class="ans" value="false">3</button></li>
+                        <li><button class="ans" value="false">4</button></li>
+                    </ul>
+                </p>
             </div>
         </main>
 
