@@ -43,5 +43,5 @@ function submitted(){
     }
 }
 function a() { 
-    let s = 1;
+    let s = 2;
 }
