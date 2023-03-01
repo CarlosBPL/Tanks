@@ -17,8 +17,6 @@ const quiz = [
 ]
 
 
-
-
 submit.addEventListener("click", submitted);
 easy.addEventListener("click", easyQuiz);
 
@@ -43,4 +41,7 @@ function submitted(){
     } else { 
         console.log("bruh");
     }
+}
+function a() { 
+    let s = 1;
 }
