@@ -62,7 +62,10 @@ ol {
 ol > li {
     margin-top: 20px;
 }
-#dropdown:hover>ol {
+.d-none{ 
+    display: none;
+}
+.d-block{ 
     display: block;
 }
 ul {
