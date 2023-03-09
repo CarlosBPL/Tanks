@@ -1,3 +1,4 @@
+
 const easy = document.querySelector("#es");
 const sel = $("#select");
 const qu1 = document.querySelector("#q1");

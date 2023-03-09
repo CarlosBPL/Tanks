@@ -49,6 +49,9 @@ nav{
 #dropdown ol  { 
     list-style-type: none;
 }
+#dropdown:hover { 
+    color: red;
+}
 ol { 
     text-align: center;
     position: absolute;
