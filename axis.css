@@ -1,0 +1,13 @@
+h1 { 
+    display: flex;
+    justify-content: center;
+    color: brown;
+}
+h2 { 
+    display: flex;
+    justify-content: center;
+}
+h2:hover {
+   transform: rotate(3600deg);
+    transition-duration: 5s;
+}
